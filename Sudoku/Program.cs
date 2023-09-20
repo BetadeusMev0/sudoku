@@ -106,14 +106,14 @@ bool check_err(int[,] arr, int x, int y, int c)
         }
         else if (chk == arr[i - 9, y]) result = true; 
 }
-    for (int i = y - 2; i < y+2; i++)
-    {
-        if(i>=0 && i < 9)
-        for (int j = x - 2; j < x+2; j++)
-        {
-                if (j >= 0 && j < 9) if (arr[j, i] == chk) { result = true; }
-        }
-    }
+    //for (int i = y - 2; i < y+2; i++)
+    //{
+    //    if(i>=0 && i < 9)
+    //    for (int j = x - 2; j < x+2; j++)
+    //    {
+    //            if (j >= 0 && j < 9) if (arr[j, i] == chk) { result = true; }
+    //    }
+    //}
     for (int i = pos_y * 3; i < (pos_y + 1) * 3; i++)
     {
         for (int j = pos_x * 3; j < (pos_x + 1) * 3; j++)
